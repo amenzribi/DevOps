@@ -32,6 +32,13 @@ public class AbonnementService implements IAbonnementService{
 
     }
 
+    /*  
+    @Override
+    public List<Abonnement> retrieveAbonnementByDates(LocalDate startDate, LocalDate endDate) {
+        return abonnementRepository.getAbonnementsByDateDebutBetween(startDate, endDate);
+
+    } */
+
     //@Override
 //    @Scheduled(cron = "*/30 * * * * *") /* Cron expression to run a job every 30 secondes */
   /*  public void retrieveAbonnements() {
@@ -46,18 +53,6 @@ public class AbonnementService implements IAbonnementService{
     }
 
 
-    //@Override
-//    @Scheduled(cron = "*/30 * * * * *") /* Cron expression to run a job every 30 secondes */
-  /*  public void retrieveAbonnements() {
-        LocalDate today = LocalDate.now();
-        LocalDate dateExpiration =today.plusDays(7);
-        log.info("dateExpiration : "+dateExpiration);
-        for (Abonnement abonnement: abonnementRepository.findDistinctOrderByDateFinAsc(dateExpiration)) {
-            Skieur aSkier = skieurRepository.findByAbonnement(abonnement);
-            log.info("num abonnement : "+abonnement.getNumAbon().toString() + " | date fin Abonnement :"+ abonnement.getDateFin().toString()
-                    + " |num skieur : "+ aSkier.getNumSkieur()     + " | prenom :"+ aSkier.getPrenomS() + "|nom:  " + aSkier.getNomS());
-        }
-    }
 */
     // @Scheduled(cron = "* 0 9 1 * *") /* Cron expression to run a job every month at 9am */
   //  @Scheduled(cron = "*/30 * * * * *") /* Cron expression to run a job every 30 secondes */
